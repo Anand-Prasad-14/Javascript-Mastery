@@ -33,3 +33,26 @@ const myFunction = function add() {
 }
 
 console.log(myFunction);
+
+//*********************Memory*********************** */
+
+// Stack (Primitive) , Heap (Non-primitive)
+
+let myName = "anandprasadcom"
+let anotherName = myName
+anotherName = "andyTech"
+console.log(myName);
+console.log(anotherName);
+
+let user1 = {
+    name: "anand",
+    age: 23,
+    email: "anand@gmail.com",
+    upi: "user@axis"
+}
+
+let user2 = user1
+
+user2.email = "andy@gmail"
+console.log(user1.email);
+console.log(user2.email);
